@@ -97,17 +97,16 @@ for i in range(totalTime):
                 final_info.append(copy_info[n])
             copy_info.clear() 
 
-# test_info = final_info
-# for i in range(size): 
-#     if test_info[i]['burst_time'] != 0:
-#     for j in range(totalTime): 
-#         if j == 0:
-#             test_info[i]['burst_time']-0
-#         else:
-#             test_info[i]['burst_time']-1
-#             if test_info[i]['burst_time'] == 0:
-#                 break
-
+ready_q = []
+for i in range(totalTime): 
+    for j in range(size): 
+        if info[j]['arrival_time'] == i:
+            copy_info.append(info[j])
+        else:
+            copy_info.sort(key=sort_burst)
+            for n in range(len(copy_info)):
+                final_info.append(copy_info[n])
+            copy_info.clear() 
 
 for i in range(size):
     print_info = final_info[i]
