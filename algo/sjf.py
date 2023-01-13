@@ -96,11 +96,14 @@ for i in range(totalTime):
                 final_info.append(copy_info[n])
             copy_info.clear()
 
+q = []
 for i in range(size):
     test_info = final_info[i]
+    q.append(str(test_info))
     for j in range(totalTime):
-        test_info['burst_time']-1
-        if test_info['burst_time'] == 0:
+        q['burst_time']-1
+        if q['burst_time'] == 0:
+            q.clear()
             break
 
 
