@@ -106,8 +106,6 @@ for i in range(size):
             q.clear()
             break
 
-
-
 for i in range(size):
     print_info = final_info[i]
     wt = print_info['waiting_time']
