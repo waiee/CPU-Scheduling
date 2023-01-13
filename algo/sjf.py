@@ -121,9 +121,11 @@ for i in range(size):
 #Output
 print("\n")
 ganttChart(size, timeFrame, finalID)
-printProcess(finalID, finalBt, timeFrame, final_info)
+# printProcess(finalID, finalBt, timeFrame, final_info)
 print("Total Turnaround Time: " + str(totalTt))
 print("Average Turnaround Time: " + str(avTt))
 print("")
 print("Total Waiting Time: " + str(totalWt))
-print("Average Waiting Time: " + str(avWt))
+print("Average Waiting Time: " + str(avWt) + "\n")
+
+#test
