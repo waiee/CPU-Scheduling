@@ -94,7 +94,6 @@ for i in range(totalTime):
             copy_info.sort(key=sort_burst)
             for n in range(len(copy_info)):
                 final_info.append(copy_info[n])
-                final_info.sort(key=sort_burst)
             copy_info.clear() 
 
 for i in range(size):
