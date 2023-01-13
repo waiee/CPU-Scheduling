@@ -84,6 +84,7 @@ totalTt = 0
 totalWt = 0
 avTt = 0
 avWt = 0
+test_je = 0
 
 info.sort(key=sort_param)
 for i in range(totalTime): 
@@ -97,15 +98,17 @@ for i in range(totalTime):
             copy_info.clear() 
 
 test_info = final_info
-for i in range(totalTime): 
-    for j in range(size): 
-        if test_info[j]['arrival_time'] == i:
-            copy_info.append(info[j])
-        else:
-            copy_info.sort(key=sort_burst)
-            for n in range(len(copy_info)):
-                final_info.append(copy_info[n])
-            copy_info.clear() 
+for i in range(size): 
+    if test_info[j]['burst_time'] != 0:
+        for j in range(totalTime): 
+            if j == 0:
+                test_info[j]['burst_time']-0
+            else:
+                test_info[j]['burst_time']-1
+                if test_info[j]['burst_time'] == 0:
+                    break
+
+
 
 
 for i in range(size):
