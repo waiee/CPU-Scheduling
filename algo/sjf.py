@@ -55,8 +55,8 @@ totalTime = 0
 #User input
 for i in range(size):
     process_info = {}
-    print("[P" + str(i) + "]")
-    process_info['id'] = str(i)
+    # print("[P" + str(i) + "]")
+    process_info['id'] = str(input("Enter Process Name: "))
     process_info['burst_time'] = int(input("Enter Burst Time: "))
     process_info['arrival_time'] = int(input("Enter Arrival Time: "))
     info.append(process_info)
