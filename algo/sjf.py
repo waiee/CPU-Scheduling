@@ -99,9 +99,7 @@ for i in range(totalTime):
 ready_q = []
 ex_q = []
 
-for i in range(totalTime):
-    for j in range(size):
-        
+
 
 for i in range(size):
     print_info = final_info[i]
