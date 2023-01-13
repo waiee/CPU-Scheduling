@@ -94,9 +94,8 @@ for i in range(totalTime):
             copy_info.sort(key=sort_burst)
             for n in range(len(copy_info)):
                 final_info.append(copy_info[n])
-            copy_info.clear() 
+            copy_info.clear()
 
-proName = []
 for i in range(totalTime): 
     for j in range(size): 
         if info[j]['arrival_time'] == i:
@@ -105,8 +104,7 @@ for i in range(totalTime):
             copy_info.sort(key=sort_burst)
             for n in range(len(copy_info)):
                 final_info.append(copy_info[n])
-            copy_info.clear() 
-
+            copy_info.clear()
 
 for i in range(size):
     print_info = final_info[i]
