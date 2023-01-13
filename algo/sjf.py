@@ -96,6 +96,18 @@ for i in range(totalTime):
                 final_info.append(copy_info[n])
             copy_info.clear() 
 
+test_info = final_info
+for i in range(totalTime): 
+    for j in range(size): 
+        if test_info[j]['arrival_time'] == i:
+            copy_info.append(info[j])
+        else:
+            copy_info.sort(key=sort_burst)
+            for n in range(len(copy_info)):
+                final_info.append(copy_info[n])
+            copy_info.clear() 
+
+
 for i in range(size):
     print_info = final_info[i]
     wt = print_info['waiting_time']
