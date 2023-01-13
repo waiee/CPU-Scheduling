@@ -6,7 +6,7 @@ def ganttChart(bar, time, processName):
     print("*")
 
     for i in range(bar):
-        print(f'{("|   "+ "P" + processName[i] +"  "):9.7}',end="")
+        print(f'{("|   " + processName[i] +"  "):9.7}',end="")
     print("|")
 
     print("*--------",end="")
@@ -127,5 +127,3 @@ print("Average Turnaround Time: " + str(avTt))
 print("")
 print("Total Waiting Time: " + str(totalWt))
 print("Average Waiting Time: " + str(avWt) + "\n")
-
-#test
