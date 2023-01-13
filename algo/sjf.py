@@ -97,8 +97,9 @@ for i in range(totalTime):
             copy_info.clear()
 
 ready_q = []
-ex_q = []
-
+for i in range(size):
+    for j in range(totalTime):
+        
 
 
 for i in range(size):
