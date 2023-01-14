@@ -1,3 +1,5 @@
+#Unfinished code, but this one has better ui experience.
+
 def ganttChart(bar, time, processName):
     print("Gantt Chart: \n")
     print("*--------", end="")
@@ -94,16 +96,7 @@ for i in range(totalTime):
             copy_info.sort(key=sort_burst)
             for n in range(len(copy_info)):
                 final_info.append(copy_info[n])
-            copy_info.clear()
-
-q = []
-t = 0
-for i in range(size):
-    test_info = final_info[i]
-    t += test_info['burst_time']
-
-    for i
-    
+            copy_info.clear()    
 
 for i in range(size):
     print_info = final_info[i]
