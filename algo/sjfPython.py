@@ -55,7 +55,7 @@ def outputTable(num_processes,matrix):
     find_padding(6,num_processes,matrix)
     line = "-" * 101 # draw line
     print("+" + line + "+")
-    print("|  Process  |  Arrival Time  |  Burst Time  |  Priority  |  Turnaround Time  |  Waiting Time  |")
+    print("|   Process  |   Arrival Time  |   Burst Time  |   Priority  |   Turnaround Time  |   Waiting Time  |")
     print("+" + line + "+")
     for i in range(num_processes):
         temp_array = ["" for j in range(6)]
@@ -228,15 +228,15 @@ def showGanttChart(ganttChart, time):
 
 
 if __name__ == '__main__':
-  print("Non Preemptive Shorter Job First\n")
+  print("Non-Preemptive Shortest Job First (SJF)\n")
   num = get_num_processes()
   M = get_process_details(num)
-  print("\n\nInput Table\n")
+  print("\n\nInput Table:\n")
   show_input_table(num,M)
   sortSequenceByAT(num,M)
   otArr,finTimeArr = sortSequenceByBT(num,M)
   avgTAT,avgWT = calculateTime(num,otArr,finTimeArr)
-  print("\nOutput Table\n")
+  print("\nOutput Table:\n")
   outputTable(num,otArr)
   pro4GC = createProcessForGanttChart(num,otArr)
   tm4GC = createTimeForGanttChart(num,otArr,finTimeArr)
