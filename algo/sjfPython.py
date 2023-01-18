@@ -9,8 +9,9 @@ def get_num_processes():
     num_processes = int(input("Enter the number of processes: "))
     print()
     if 3 <= num_processes <= 10:
-        print("Please enter number 3-10.")
         return num_processes
+    else:
+        print("Please enter number 3-10.")
 
 # Prompt the user for the details of each process
 def get_process_details(num_processes):
